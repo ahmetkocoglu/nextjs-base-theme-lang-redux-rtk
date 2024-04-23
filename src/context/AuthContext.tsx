@@ -89,7 +89,7 @@ const AuthProvider = ({children}: Props) => {
                 router.push("/dashboard")
             }
         }
-    }, [result.isSuccess]);
+    }, [result.isSuccess, pathname, router]);
 
     useEffect(() => {
         if (pathname.startsWith('/dashboard')) {
@@ -97,7 +97,7 @@ const AuthProvider = ({children}: Props) => {
                 router.push("/auth/sign-in")
             }
         }
-    }, [meIsError]);
+    }, [meIsError, pathname, router]);
 
     const handleLogin = (params: LoginParams, errorCallback?: ErrCallbackType) => {
         login(params)

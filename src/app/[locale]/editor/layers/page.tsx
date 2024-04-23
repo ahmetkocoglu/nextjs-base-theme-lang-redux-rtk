@@ -58,8 +58,8 @@ const LayerPage = () => {
                                     </DropdownMenu>
                                 </div>
                                 <div className="border w-full grid grid-cols-2 gap-2 p-3">
-                                    {[0, 2, 3, 4, 5, 6, 7].map(() => {
-                                        return <div className="flex items-center justify-between border py-2.5">
+                                    {[0, 2, 3, 4, 5, 6, 7].map((k:number) => {
+                                        return <div className="flex items-center justify-between border py-2.5" key={k}>
                                             <div className="flex items-center space-x-2">
                                                 <Checkbox id="terms"/>
                                                 <label
@@ -108,8 +108,9 @@ const LayerPage = () => {
                                 <div className="grid gap-2">
                                     <Label htmlFor="email">Display</Label>
                                     <div className="flex gap-2">
-                                        {[0, 2, 3, 4, 5, 6, 7].map(() => {
+                                        {[0, 2, 3, 4, 5, 6, 7].map((k: number) => {
                                             return <div
+                                                key={k}
                                                 className="border rounded-md w-10 h-10 flex items-center justify-center">
                                                 <SquareX className="h-4 w-4"/>
                                             </div>

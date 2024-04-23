@@ -2,7 +2,6 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import React from "react";
 import {Inter} from "next/font/google";
-import LeftSideMenu from "@/components/left-side-menu";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -15,7 +14,7 @@ const BaseLayout: React.FC<Props> = ({children}) => {
         <div className={`min-h-screen ${inter.className}`}>
             <div className="flex">
                 <div>
-                    <LeftSideMenu/>
+                    {/*<LeftSideMenu/>*/}
                 </div>
                 <div className="flex-grow">
                     <Header/>

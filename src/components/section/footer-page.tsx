@@ -1,4 +1,5 @@
 import { JSX, SVGProps } from "react"
+import Image from "next/image";
 
 const navigation = {
     solutions: [
@@ -99,7 +100,7 @@ export default function FooterPage() {
             </h2>
             <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <img
+                    <Image
                         className="h-7"
                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                         alt="Company name"
