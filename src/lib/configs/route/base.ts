@@ -1,3 +1,3 @@
 export const base = {
-    base: 'http://localhost:3019/api/v1'
+    base: 'https://be-dev.autanate.com/'
 };

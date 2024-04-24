@@ -26,6 +26,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "focus-trap-react": "^10.2.3",
+    "formik": "^2.4.5",
     "framer-motion": "^11.0.25",
     "html-to-json-parser": "^2.0.1",
     "lucide-react": "^0.364.0",
@@ -38,7 +39,8 @@
     "react-resizable-panels": "^2.0.16",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
