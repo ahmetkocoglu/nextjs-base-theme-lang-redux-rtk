@@ -102,8 +102,10 @@ export default function FooterPage() {
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <Image
                         className="h-7"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        src="/001.png"
                         alt="Company name"
+                        width={100}
+                        height={100}
                     />
                     <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                         <div className="md:grid md:grid-cols-2 md:gap-8">

@@ -43,7 +43,6 @@ const menu = [
 };*/
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
-    const [position, setPosition] = React.useState("bottom")
     const router = useRouter();
     const localActive = useLocale();
     const handleVolumeChange = (item: string) => {
@@ -56,7 +55,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-        >{position}
+        >
             <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
                 <div className="hidden border-r bg-muted/40 md:block">
                     <div className="flex h-full max-h-screen flex-col gap-2">
