@@ -12,5 +12,8 @@
   },
   "Footer": {
     "copyright": "© 2024 Uygulamanız. Her hakkı saklıdır."
+  },
+  "Error": {
+    "not-found": "Sayfa bulunamadı"
   }
 }
