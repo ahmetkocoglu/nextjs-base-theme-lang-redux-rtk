@@ -1,4 +1,4 @@
-import {useLocale, useTranslations} from 'next-intl';
+import {useTranslations} from 'next-intl';
 import React from "react";
 
 export default function NotFound() {

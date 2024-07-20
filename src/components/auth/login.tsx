@@ -2,16 +2,14 @@
 
 import React from 'react';
 import {Label} from "@/components/ui/label";
-import {Input} from "@/components/ui/input";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
-import Image from "next/image";
 import {InputIcon} from "@/components/ui/input-icon";
 import {Lock, MailIcon} from "lucide-react";
-import {Checkbox} from "@/components/ui/checkbox";
 import {useAuth} from "@/lib/hooks";
 import {useFormik} from "formik";
 import * as Yup from 'yup';
+import {Input} from "@/components/ui/input";
 
 const Login = () => {
     const {login} = useAuth()
@@ -37,7 +35,7 @@ const Login = () => {
         <>
             <div className="w-full min-h-screen lg:grid lg:grid-cols-2">
                 <div className="flex items-center justify-center py-12">
-                    <div className="mx-auto grid w-[350px] gap-6">
+                    <div className="mx-auto grid w-[450px] gap-6">
                         <div className="grid gap-2 text-center">
                             <h1 className="text-3xl font-bold">Log in to your account</h1>
                         </div>
@@ -75,7 +73,7 @@ const Login = () => {
                                     ) : null}
                                     <div className="flex items-center my-1.5 mx-1">
                                         <div className="flex items-center space-x-2">
-                                            <Checkbox id="terms"/>
+                                            <Input id="terms" type={'checkbox'} className={'h-5'}/>
                                             <label
                                                 htmlFor="terms"
                                                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"

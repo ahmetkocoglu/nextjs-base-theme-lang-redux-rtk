@@ -5,26 +5,19 @@ import {ThemeProvider} from "@/components/theme-provider"
 import {ModeToggle} from "@/components/mode";
 
 export default function Home() {
-  const t = useTranslations('IndexPage');
+    const t = useTranslations('IndexPage');
     const localActive = useLocale();
 
-  return (
-    <div className="text-center">
-      <h1 className='text-4xl mb-4 font-semibold'>{t('title')}</h1>
-      <p>{t('description')}</p>
-        <div className="flex justify-center">
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-            <div className="fixed flex flex-1">
-                <LocalSwitcher/>
-                <ModeToggle/>
+    return (
+        <div className="text-center">
+            <h1 className='text-4xl mb-4 font-semibold'>{t('title')}</h1>
+            <p>{t('description')}</p>
+            <div className="flex justify-center">
+                <div className="fixed flex flex-1">
+                    <LocalSwitcher/>
+                    <ModeToggle/>
+                </div>
             </div>
-        </ThemeProvider>
         </div>
-    </div>
-  );
+    );
 }
